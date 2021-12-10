@@ -1,0 +1,17 @@
+<rss version="2.0" encoding="UTF-8">
+<channel>
+<title>Izdavačka kuća "UniBook"</title>
+<link>https://nikola-1.github.io/UniBook/index.html</link>
+<description>Knjige izdavačke kuće "UniBook"</description>
+<item>
+<title>Novo u ponudi!</title>
+<link>https://nikola-1.github.io/UniBook/knjige.html</link>
+<description>Kupite naša nova izdanja!</description>
+</item>
+<item>
+<title>Kontakt stranica</title>
+<link>https://nikola-1.github.io/UniBook/kontakt.html</link>
+<description>Nalazimo se u centru grada!</description>
+</item>
+</channel>
+</rss>
