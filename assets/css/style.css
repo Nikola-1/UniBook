@@ -3,6 +3,7 @@
     margin:0;
     font-family: 'Poppins', sans-serif;
 }
+
 header{
     background-color: #fff;
     
@@ -44,7 +45,6 @@ header{
 }
 .lista ul li{
     margin: 25px;
-    line-height: 20px;
     
 }
 .lista ul li :hover{
@@ -85,10 +85,17 @@ header{
     border-radius: 0;
     
 }
+@media (max-width:1400px) {
+    .lista ul {
+        font-size: 1em;
+    }
+    
+}
 .logo{
     display: inline-flex;
     font-family: 'popins',sans-serif;
     text-align: left;
+    max-height: 10px;
     margin-left: 50px;
     color: #2c83c6;
     position: absolute;
