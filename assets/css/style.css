@@ -177,7 +177,6 @@ header{
 }
 .blok{
     margin: 40px;
-    padding: 30px;
     display:inline-grid;
 }
 .blok:nth-child(1){
