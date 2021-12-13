@@ -709,6 +709,11 @@ width: 150px;
     
     
 }
+@media (max-width:1400px) {
+    #pisac_tekst{
+        font-size: 14px;
+    }
+}
 .autor_blok{
     width: 1200px;
     margin: auto;
