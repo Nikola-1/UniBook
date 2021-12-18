@@ -250,7 +250,14 @@ header{
 }
 .red_knjige .artikal_novo{
     display: inline-grid;
-    
+    padding: 3px;
+    border: 3px solid transparent;
+}
+.artikal_novo:hover{
+    box-shadow: 1px 1px 7px 1px ;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
 }
 .red_knjige .ime{
     color: #2c83c6;
@@ -613,6 +620,7 @@ width: 150px;
     margin: auto;
     color: #2c83c6;
     font-weight: bold;
+    
 }
 .nav_lista_blok ul{
     display: flex;
@@ -621,9 +629,11 @@ width: 150px;
 }
 .nav_lista_blok ul li{
     margin: 30px;
+    border: 1px solid transparent;
 }
 .nav_lista_blok ul li:hover{
     border-bottom: 1px solid #2c83c6;
+    cursor: pointer;
 }
 .search{
     float: right;
