@@ -1,5 +1,16 @@
 @import url(responsive.scss);
-
+$tamnoplava:#064472;
+$svetloplava:#1D80DB;
+$ledenoplava:#A8CEFF;
+$headertekst:#fff;
+@media (max-width:425px){
+  p{
+    font-size: 12px;
+  }
+  h1,h2,h3{
+    font-size: 14px;
+  }
+}
 @media (max-width: 600px) {
   .services {
     text-align: center;
@@ -15,8 +26,9 @@
     height: (60px/2) *20;
   }
   .header_text {
-    width: 300px;
-
+    height: 40%;
+    justify-content: start;
+    
   }
   .header_text h1 {
     font-size: 30px;
@@ -26,33 +38,15 @@
   }
   .action_button  {
     box-sizing: border-box;
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   
   
   .wave_two {
     margin-top: 26px;
-  }
-  .btn-menu{
-    display: block;
-    height: 50px;
-    float: right;
-    margin-top: 10px;
-  }
-  .line {
-    background-color: #fff;
-    width: 35px;
-    height: 3px;
-    margin: 10px;
-  }
-  .navigacija ul li a {
-    display: none;
-  }
-  .btn:after .navigacija ul li a {
-    content: '';
-    display: block;
   }
   #lap-top{
     margin-top: -13em;
@@ -68,7 +62,7 @@
     
 }
 .service{
-  width: 50%;
+  width: 60%;
   p{
     width: fit-content;
   }
@@ -77,8 +71,8 @@
   flex-direction: column-reverse;
 }
 #me img{
-  height: 300px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 .about-me{
 width: 100%;
@@ -89,7 +83,7 @@ width: 100%;
   margin-bottom: 30px;
   .line1{
     margin: 20px auto;
-    
+    line-height: 20px;
   }
 }
 }
@@ -108,14 +102,24 @@ width: 100%;
 }
 }
 .testimonials-block{
+  width: 75% !important;
+  
+}
+.testimonials-wrapper{
   flex-direction: column;
-  .inner-block{
-    margin: 1em !important;
-    width: fit-content !important;
-    p{
-      width: 350px;
-    }
+}
+.contact-me-block{
+  img{
+    width: 200px !important;
+    height: 200px !important;
   }
+}
+.navigacija ul{
+  display: block;
+  text-align: center;
+}
+.navigacija ul li{
+  border-bottom: 1px solid white;
 }
 }
 
@@ -155,22 +159,16 @@ width: 100%;
     flex-direction: column;
   
 }
-.testimonials-block{
-  flex-direction: column;
-  .inner-block{
-    p{
-      width: 350px;
-    }
-  }
-  
 }
 
-}
 @media(max-width:767px){
   .about-me-blok{
     flex-direction: column-reverse;
-  }
+  } 
 }
+
+
+
 @media (min-width:768px){
   #lap-top{
     margin-top: -13em;
@@ -182,10 +180,9 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    gap: 1%;
   }
-  .service{
-    width: 40%;
-  }
+  
 
 .skill{
   width: 40%!important;
@@ -204,14 +201,6 @@ width: 100%;
   }
   
 }
-.testimonials-block{
-  flex-direction: row;
-  .inner-block{
-    p{
-      width: 350px;
-    }
-  }
-  }
   .projects-img{
     
     img{
@@ -219,7 +208,9 @@ width: 100%;
       height: 150px ;
     }
   }
-  
+  .service{
+    width: 40%;
+  }
 }
 @media(max-width:911px){
   .about-me{
@@ -227,12 +218,26 @@ width: 100%;
     .about-me-blok{
       gap:10%;
     }
+    
+  }
+  .contact-wrapper{
+    display: block;
+  }
+  .testimonials-wrapper{
+    flex-direction: column;
   }
 }
 @media(min-width:912px){
   .about-me{
     width: 100%;
     
+  }
+  .testimonials-wrapper{
+    gap:2%;
+    justify-content: space-around;
+  }
+  .service{
+    width: 45%;
   }
 }
 @media(max-width:1023px){
@@ -257,13 +262,10 @@ width: 100%;
   #lap-top{
     margin-top: -16em;
   }
- 
   .waves_blok{
     padding-top: 50px;
   }
-  .service{
-    width: 40%;
-  }
+  
   .services{
     display: flex;
     flex-wrap: wrap;
@@ -272,19 +274,8 @@ width: 100%;
   }
   .skill{
     width: 40%!important;
-  
   }
-  .testimonials-block{
-    flex-direction: row;
-    .inner-block{
-      margin: 30px;
-      width: fit-content !important;
-      p{
-        width: 650px;
-      }
-    }
-    
-  }
+
   .projects-img{
     
     img{
@@ -304,13 +295,7 @@ width: 100%;
     margin-top: -17em;
   }
   .service{
-    width: 15%;
-    p{
-      width: 60%;
-    }
-    .about-me{
-      width: 75%;
-    }
+    width: 22%;
   }
   .services{
     display: flex;
@@ -319,7 +304,7 @@ width: 100%;
     align-items: stretch;
   }
   .skill{
-    width: 15%!important;
+    width: 20% !important;
   
   }
   .inner-block{
@@ -331,9 +316,9 @@ width: 100%;
     margin-top: -22em;
   }
   .service{
-    width: 17%;
+    width: 22%;
     p{
-      width: 50%;
+      width: 60%;
     }
   }
   .projects-img{
@@ -378,4 +363,3 @@ width: 100%;
     }
   }
 }
-
