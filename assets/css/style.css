@@ -49,7 +49,7 @@ header{
 }
 .lista ul li :hover{
     cursor: pointer;
-    border-bottom: 2px solid #2c83c6;
+    border-bottom: 3px solid #2c83c6;
 }
 
 .lista a{
